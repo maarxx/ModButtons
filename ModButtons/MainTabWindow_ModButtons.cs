@@ -27,17 +27,20 @@ namespace ModButtons
             get
             {
                 int numColumns = columns.Count;
-                int numRows = 0;
-                int columnCount = 0;
+                int maxRows = 0;
+                int rowsInColumn;
                 foreach (List<ModButton_Text> column in columns)
                 {
-                    columnCount = column.Count;
-                    if (columnCount > numRows)
+                    rowsInColumn = column.Count;
+                    if (rowsInColumn > maxRows)
                     {
-                        numRows = column.Count;
+                        maxRows = rowsInColumn;
                     }
                 }
-                return new Vector2(250f * numColumns, (BUTTON_HEIGHT + BUTTON_SPACE) * (numRows + 1));
+                return new Vector2(
+                    ((BUTTON_WIDTH + BUTTON_SPACE) * (numColumns)) + (BUTTON_SPACE * 3),
+                    ((BUTTON_HEIGHT + BUTTON_SPACE) * (maxRows)) + (BUTTON_SPACE * 3)
+                );
             }
         }
 
@@ -48,19 +51,23 @@ namespace ModButtons
         {
             base.DoWindowContents(canvas);
             Text.Font = GameFont.Small;
+            int col = 0;
             foreach (List<ModButton_Text> column in columns)
             {
-                int i = 0;
+                int row = 0;
                 foreach (ModButton_Text button in column)
                 {
                     Rect nextButton = new Rect(canvas);
-                    nextButton.y = i * (BUTTON_HEIGHT + BUTTON_SPACE);
+                    nextButton.y = row * (BUTTON_HEIGHT + BUTTON_SPACE);
                     nextButton.height = BUTTON_HEIGHT;
+                    nextButton.x = col * (BUTTON_WIDTH + BUTTON_SPACE);
+                    nextButton.width = BUTTON_WIDTH;
 
                     button.DrawButton(nextButton);
 
-                    i++;
+                    row++;
                 }
+                col++;
             }
         }
     }
