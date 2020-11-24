@@ -10,22 +10,27 @@ namespace ModButtons
 {
     public class ModButton_Text
     {
-        private string label;
-        private Action a;
-        public ModButton_Text(string label, Action a)
+        private Func<String> getLabel;
+        private Action doButton;
+        public ModButton_Text(Func<String> getLabel, Action doButton)
         {
-            this.label = label;
-            this.a = a;
+            this.getLabel = getLabel;
+            this.doButton = doButton;
+        }
+
+        public string GetLabel()
+        {
+            return getLabel.Invoke();
         }
 
         public void DoButton()
         {
-            a.Invoke();
+            doButton.Invoke();
         }
 
         public void DrawButton(Rect rect)
         {
-            if (Widgets.ButtonText(rect, this.label))
+            if (Widgets.ButtonText(rect, this.GetLabel()))
             {
                 this.DoButton();
             }
