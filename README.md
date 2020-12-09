@@ -23,6 +23,8 @@ A bunch of my other mods use this:
 * https://github.com/maarxx/BulkAssigner
 * https://github.com/maarxx/FixStackedAnimalLag
 
+![Preview](./About/Preview.png)
+
 # How to Install
 
 At the top of this page, on the right-hand-side, a little ways down, will be a green button, labeled "Clone or download". Click it, then click "Download ZIP". Your browser will download it.
