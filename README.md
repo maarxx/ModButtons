@@ -4,6 +4,8 @@ This is a mod for the game RimWorld by Ludeon Studios.
 
 It offers a simple tab at the bottom that other mods can use for buttons.
 
+We're on Steam: https://steamcommunity.com/sharedfiles/filedetails/?id=2324534249
+
 # Table of Contents
 
 * [Introduction and Explanation](#introduction-and-explanation)
