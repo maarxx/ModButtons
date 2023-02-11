@@ -49,7 +49,7 @@ namespace ModButtons
 
         public override void DoWindowContents(Rect canvas)
         {
-            base.DoWindowContents(canvas);
+            //base.DoWindowContents(canvas);
             Text.Font = GameFont.Small;
             int col = 0;
             foreach (List<ModButton_Text> column in columns)

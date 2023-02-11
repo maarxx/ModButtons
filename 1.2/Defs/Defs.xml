@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <MainButtonDef>
+    <defName>ModButtons</defName>
+    <label>ModButtons</label>
+    <description>Provides a meta-tab for various mods to provide simple buttons.</description>
+    <tabWindowClass>ModButtons.MainTabWindow_ModButtons</tabWindowClass>
+    <order>994</order>
+    <!--<defaultToggleKey>F1</defaultToggleKey>-->
+  </MainButtonDef>
+  
+</Defs>
