@@ -2,18 +2,17 @@
 
 This is a mod for the game RimWorld by Ludeon Studios.
 
-It offers a simple tab at the bottom that other mods can use for buttons.
+The mod is a library/dependency for other mods, offering a common interface and screenspace for other mods to offer simple buttons.
 
 We're on Steam: https://steamcommunity.com/sharedfiles/filedetails/?id=2324534249
 
 # Table of Contents
 
-* [Introduction and Explanation](#introduction-and-explanation)
-* [How to Install](#how-to-install)
-* [How to Update](#how-to-update)
-* [Bugs, New Features, and Updates](#bugs-new-features-and-updates)
+* [Introduction](#introduction)
 
-# Introduction and Explanation
+# Introduction
+
+The mod is a library/dependency for other mods, offering a common interface and screenspace for other mods to offer simple buttons.
 
 This mod doesn't actually do anything interesting on its own.
 
@@ -23,6 +22,5 @@ A bunch of my other mods use this:
 
 * https://github.com/maarxx/SmarterScheduling
 * https://github.com/maarxx/BulkAssigner
-* https://github.com/maarxx/FixStackedAnimalLag
 
 ![Preview](./About/Preview.png)
