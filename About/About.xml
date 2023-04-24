@@ -3,7 +3,9 @@
   <name>ModButtons</name>
   <author>Maarx</author>
   <url>https://github.com/maarxx/ModButtons/</url>
-  <description>Offers a simple tab at the bottom that other mods can use for buttons.</description>
+  <description>
+The mod is a library/dependency for other mods, offering a common interface and screenspace for other mods to offer simple buttons.
+  </description>
   <packageId>maarx.modbuttons</packageId>
   <supportedVersions>
     <li>1.2</li>
